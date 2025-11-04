@@ -1,0 +1,1 @@
+export { AidaPOV } from './AidaPOV';

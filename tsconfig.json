@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "sourceMap": true,
+        "declaration": true,
+        "lib": [
+            "ES2015",
+            "DOM"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

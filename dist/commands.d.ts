@@ -1,0 +1,68 @@
+export declare const EXPOSURE_MODE: readonly ["auto", "manual"];
+export declare const SHUTTER: {
+    '1/60': number;
+    '1/90': number;
+    '1/100': number;
+    '1/125': number;
+    '1/180': number;
+    '1/250': number;
+    '1/350': number;
+    '1/500': number;
+    '1/725': number;
+    '1/1000': number;
+    '1/1500': number;
+    '1/2000': number;
+    '1/3000': number;
+    '1/4000': number;
+    '1/6000': number;
+    '1/10000': number;
+};
+export declare const GAIN: {
+    '0dB': number;
+    '2dB': number;
+    '4dB': number;
+    '6dB': number;
+    '8dB': number;
+    '10dB': number;
+    '12dB': number;
+    '14dB': number;
+    '16dB': number;
+    '18dB': number;
+    '20dB': number;
+    '22dB': number;
+    '24dB': number;
+    '26dB': number;
+    '28dB': number;
+    '30dB': number;
+};
+export declare const IRIS: {
+    Close: number;
+    'F14.0': number;
+    'F11.0': number;
+    'F9.6': number;
+    'F8.0': number;
+    'F6.8': number;
+    'F5.6': number;
+    'F4.8': number;
+    'F4.0': number;
+    'F3.4': number;
+    'F2.8': number;
+    'F2.4': number;
+    'F2.0': number;
+    'F1.8': number;
+};
+export declare const ANTIFLICKER: {
+    Off: number;
+    '50Hz': number;
+    '60Hz': number;
+};
+export declare const WHITEBALANCE_MODE: readonly ["auto", "indoor", "outdoor", "one push", "auto tracking", "manual", "temperature"];
+export declare const WIDEDYNAMICRANGE_MODE: readonly ["Off", 1, 2, 3, 4, 5, 6];
+export declare const NOISEREDUCTION3D_MODE: {
+    Off: number;
+    Auto: number;
+    1: number;
+    2: number;
+    3: number;
+    4: number;
+};
