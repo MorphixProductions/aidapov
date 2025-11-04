@@ -1,6 +1,6 @@
 {
     "name": "aidapov",
-    "version": "2025.11.1",
+    "version": "2025.11.2",
     "description": "Rest API wrapper for Aida POV NDI cameras with 0 dependencies.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
