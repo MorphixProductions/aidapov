@@ -26,6 +26,26 @@ export class AidaPOV {
 		});
 	}
 
+	public async getInfo(): Promise<{
+		app_version: string;
+		bootloader_version: string;
+		device_name: string;
+		serial_number: string;
+		system_version: string;
+	}> {
+		const body = {
+			system: {
+				app_version: true,
+				bootloader_version: true,
+				device_name: true,
+				serial_number: true,
+				system_version: true,
+			},
+		};
+		const response = await this.request('get', body);
+		return response?.system;
+	}
+
 	async setExposureMode(mode: (typeof EXPOSURE_MODE)[number]) {
 		const body = {
 			image: { exposure_mode: mode },

@@ -5,6 +5,13 @@ export declare class AidaPOV {
     ready: boolean;
     token: string;
     constructor(ip: string, username: string, password: string);
+    getInfo(): Promise<{
+        app_version: string;
+        bootloader_version: string;
+        device_name: string;
+        serial_number: string;
+        system_version: string;
+    }>;
     setExposureMode(mode: (typeof EXPOSURE_MODE)[number]): Promise<boolean>;
     getExposureMode(): Promise<(typeof EXPOSURE_MODE)[number]>;
     setShutter(shutter: keyof typeof SHUTTER): Promise<boolean>;

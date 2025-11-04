@@ -42,7 +42,7 @@ if (password == null)
     throw new Error('Please provide the password as the first argument.');
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var cam, rtsp, rtmp, flv, webrtc;
+        var cam, info;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -53,19 +53,10 @@ function main() {
                     return [4 /*yield*/, cam.whenReady()];
                 case 1:
                     _a.sent();
-                    return [4 /*yield*/, cam.getRTSPUrl('main')];
+                    return [4 /*yield*/, cam.getInfo()];
                 case 2:
-                    rtsp = _a.sent();
-                    return [4 /*yield*/, cam.getRTMPUrl('main')];
-                case 3:
-                    rtmp = _a.sent();
-                    return [4 /*yield*/, cam.getFLVUrl('main')];
-                case 4:
-                    flv = _a.sent();
-                    return [4 /*yield*/, cam.getWebRTCUrl('main')];
-                case 5:
-                    webrtc = _a.sent();
-                    console.log('Current mode:', { rtsp: rtsp, rtmp: rtmp, flv: flv, webrtc: webrtc });
+                    info = _a.sent();
+                    console.log('Camera info:', info);
                     return [2 /*return*/];
             }
         });

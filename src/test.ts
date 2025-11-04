@@ -17,11 +17,14 @@ async function main() {
 
 	await cam.whenReady();
 
-	const rtsp = await cam.getRTSPUrl('main');
-	const rtmp = await cam.getRTMPUrl('main');
-	const flv = await cam.getFLVUrl('main');
-	const webrtc = await cam.getWebRTCUrl('main');
-	console.log('Current mode:', { rtsp, rtmp, flv, webrtc });
+	// const rtsp = await cam.getRTSPUrl('main');
+	// const rtmp = await cam.getRTMPUrl('main');
+	// const flv = await cam.getFLVUrl('main');
+	// const webrtc = await cam.getWebRTCUrl('main');
+	// console.log('Current mode:', { rtsp, rtmp, flv, webrtc });
+
+	const info = await cam.getInfo();
+	console.log('Camera info:', info);
 
 	// cam.setSaturation(2);
 

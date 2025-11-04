@@ -65,6 +65,29 @@ var AidaPOV = /** @class */ (function () {
             _this.ready = true;
         });
     }
+    AidaPOV.prototype.getInfo = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var body, response;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        body = {
+                            system: {
+                                app_version: true,
+                                bootloader_version: true,
+                                device_name: true,
+                                serial_number: true,
+                                system_version: true,
+                            },
+                        };
+                        return [4 /*yield*/, this.request('get', body)];
+                    case 1:
+                        response = _a.sent();
+                        return [2 /*return*/, response === null || response === void 0 ? void 0 : response.system];
+                }
+            });
+        });
+    };
     AidaPOV.prototype.setExposureMode = function (mode) {
         var _a;
         return __awaiter(this, void 0, void 0, function () {
