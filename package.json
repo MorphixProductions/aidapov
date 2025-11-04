@@ -7,6 +7,10 @@
     "scripts": {
         "test": "node ./dist/test.ts"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MorphixProductions/aidapov.git"
+    },
     "author": "Mees van der Wijk",
     "license": "ISC",
     "dependencies": {}

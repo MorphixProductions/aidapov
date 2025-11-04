@@ -37,15 +37,8 @@ await camera.whenReady();
 const streamUrl = await camera.getRTSPUrl('main');
 console.log('Stream URL:', streamUrl);
 
-// Move camera up for 2 seconds
-await camera.move('up', true, 15);
-setTimeout(() => {
-	//Stop moving up
-	await camera.move('up', false);
-
-	// Save current position as preset 1
-	await camera.setPreset(1);
-}, 2000);
+// Set camera exposure mode to auto
+await camera.setExposureMode('auto');
 ```
 
 ## API Reference
